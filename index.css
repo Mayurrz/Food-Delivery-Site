@@ -1,0 +1,462 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body,
+.main {
+    margin: 0;
+    width: 100%;
+}
+
+.header {
+    margin: 17px 16px;
+    position: sticky;
+}
+
+.det {
+    display: none;
+}
+
+.logo {
+    margin: 0 0 27px 9px;
+}
+
+.menu {
+    padding: 8px 7px 8px 13px;
+    margin: 23px 0;
+    position: absolute;
+    right: 0;
+}
+
+.hero {
+    padding: 50px 0 0;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 auto;
+    width: max-content;
+    color: #737373;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 17px 10px;
+    color: #252B42;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: #737373;
+    margin: 27px 32px 50px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+button {
+    width: 236px;
+    height: 68px;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.play {
+    background-color: #FA4A0C;
+    color: white;
+    border: none;
+}
+
+.App {
+    background-color: transparent;
+    border: 1px solid #FA4A0C;
+    color: #FA4A0C;
+}
+
+.heroPic {
+    margin: 22px auto 0;
+    width: 100%;
+}
+
+.how {
+    width: 100%;
+    border-bottom: 3px solid #E4E4E4;
+    margin: 116px auto 65px;
+}
+
+.how>p {
+    padding-bottom: 49px;
+}
+
+.info {
+    width: 357px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 auto;
+    width: max-content;
+    color: #FA4A0C;
+}
+
+.account>.info>h2 {
+    font-size: 42px;
+    margin: 40px 10px 50px;
+    line-height: 57px;
+}
+
+.account>.info>h4 {
+    margin: 0 50px 17px;
+    line-height: 57px;
+    width: 257px;
+    font-size: 28px;
+}
+
+.pic {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.pic>img {
+    width: 248px;
+}
+
+.checkout>.info>h3,
+.explore>.info>h3 {
+    margin-bottom: 40px;
+}
+
+.explore>.info>h2 {
+    font-size: 40px;
+    margin: 0 20px 50px;
+}
+
+.explore>.info>h4,
+.checkout>.info>h4 {
+    margin: 0 50px 10px;
+    line-height: 40px;
+    width: 257px;
+    font-size: 28px;
+}
+
+.checkout>.info>h2 {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.download {
+    background-color: #252B42;
+    padding: 120px 39px;
+}
+
+.download>h2 {
+    color: white;
+    margin: 0 15px;
+}
+
+.download>h4 {
+    color: #BDBDBD;
+    margin-bottom: 60px;
+}
+
+.action {
+    display: flex;
+    gap: 16px;
+}
+
+.action>button {
+    font-size: 16px;
+    border-radius: 10px;
+    color: white;
+}
+
+.buy {
+    width: 137px;
+    background-color: #FA4A0C;
+    border: none;
+    flex-grow: 1;
+}
+
+.play:hover,
+.buy:hover,
+.buy:active {
+    background-color: white;
+    color: #FA4A0C;
+    transition-delay: .02s;
+}
+
+.try {
+    background-color: transparent;
+    border: 1px solid white;
+    flex-grow: 1;
+}
+
+.try:hover,
+.try:active {
+    background-color: white;
+    color: #252B42;
+    transition-delay: .02s;
+}
+
+.footer {
+    padding: 60px 0 45px;
+}
+
+.social {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    border-bottom: 8px;
+}
+
+.sub {
+    font-size: 12px;
+    height: max-content;
+    color: #5C5C5C;
+}
+
+.footerlogo {
+    display: none;
+}
+
+@media only screen and (min-width: 900px) {
+    .header {
+        margin: 0 auto;
+        padding: 26px 3%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        width: 206px;
+        margin: 0 0;
+    }
+    .menu {
+        display: none;
+    }
+    .det {
+        display: flex;
+        gap: 77px;
+        height: max-content;
+    }
+    .det * {
+        padding: 10px;
+        height: 1vh;
+        font-weight: 600;
+    }
+    .selected {
+        color: #FA4A0C;
+        font-weight: 700;
+    }
+    .hero {
+        padding: 73px 0 164px;
+        background: url(/Images/Hero.png) no-repeat center center;
+        background-size: cover;
+        height: 619px;
+    }
+    .hero>p {
+        color: #F6F6F6;
+    }
+    .hero>h2 {
+        color: white;
+        font-size: 78px;
+        line-height: 80px;
+        margin: 17px auto 27px;
+        width: 1054px;
+    }
+    .hero>h4 {
+        color: #F6F6F6;
+        font-size: 24px;
+        margin-bottom: 54px;
+    }
+    .buttons {
+        flex-direction: row;
+        gap: 34px;
+        justify-content: center;
+    }
+    button {
+        border-radius: 30px;
+        margin: 0;
+    }
+    .App {
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+    }
+    .main {
+        position: absolute;
+    }
+    .herro {
+        margin: 0 auto;
+        width: max-content;
+        height: 400px;
+    }
+    .heroPic {
+        width: 548px;
+        height: 840px;
+        margin: 0 auto;
+        position: relative;
+        bottom: 310px;
+    }
+    .how {
+        width: 50%;
+        border-bottom: none;
+        border-top: 3px solid #E4E4E4;
+        margin: 116px auto 65px;
+    }
+    .how>p {
+        font-size: 36px;
+        color: black;
+        padding-top: 49px;
+        padding-bottom: 0;
+    }
+    .account {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 171px;
+        height: 110vh;
+    }
+    .info {
+        width: 568px;
+        margin: 0;
+    }
+    .explore>.info>h3,
+    .checkout>.info>h3,
+    .account>.info>h3 {
+        margin: 0;
+        width: max-content;
+        color: #FA4A0C;
+    }
+    .explore>.info>h2,
+    .checkout>.info>h2,
+    .account>.info>h2 {
+        text-align: left;
+        margin: 17px auto 27px;
+        color: #252B42;
+        font-size: 42px;
+        padding: 0;
+    }
+    .explore>.info>h4,
+    .checkout>.info>h4,
+    .account>.info>h4 {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 38px;
+        text-align: left;
+        margin: 0;
+        width: 80%;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+    .explore>.pic>img,
+    .checkout>.pic>img,
+    .account>.pic>img {
+        width: 302px;
+        height: 525px;
+        filter: drop-shadow(0 2px 4px rgba(46, 4, 4, 0.25));
+    }
+    .explore {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 110vh;
+        padding-left: 80px;
+    }
+    .checkout {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 195px;
+        justify-content: center;
+        align-items: center;
+        height: 110vh;
+    }
+    .download {
+        height: 80vh;
+        background: url(/Images/Download-Image.png) no-repeat center center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .download>h4 {
+        margin: 0;
+        font-size: 24px;
+        color: white;
+    }
+    .action {
+        gap: 16px;
+        margin: 60px 0 0;
+    }
+    .try {
+        visibility: hidden;
+        position: relative;
+    }
+    .try::after {
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: max-content;
+        width: 100%;
+        content: "App Store";
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 22px 0;
+    }
+    .buy {
+        visibility: hidden;
+        position: relative;
+        width: 173px;
+    }
+    .buy::after {
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #FA4A0C;
+        height: max-content;
+        width: 100%;
+        border-radius: 10px;
+        padding: 24px 0;
+        content: "Playstore";
+        font-size: 16px;
+    }
+    .try:hover,
+    .try:active,
+    .buy:hover,
+    .buy:active {
+        color: white;
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 250px;
+        padding: 38px 115px 54px;
+    }
+    .footerlogo {
+        display: block;
+        width: 246px;
+        height: 102px;
+    }
+    .sub {
+        width: 190px;
+    }
+}
