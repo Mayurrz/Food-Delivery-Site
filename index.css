@@ -126,7 +126,7 @@ h3 {
 
 .pic {
     width: max-content;
-    margin: 0 auto;
+    margin: 0 auto 50px;
 }
 
 .pic>img {
